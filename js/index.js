@@ -62,19 +62,19 @@ function createProduct() {
     <button class="btn btn-remove">Remove</button>
   </td>
 </tr> `;
-  const removalButtons = document.querySelectorAll('.action button');
-  for (let button of removalButtons) {
+  const removalButton = document.querySelectorAll('.action button');
+  for (let button of removalButton) {
     button.addEventListener('click', removeProduct);
   }
 }
 
 window.addEventListener('load', () => {
-  const removalButtons = document.querySelectorAll('.action button');
+  const removalButton = document.querySelectorAll('.action button');
   const creationButton = document.querySelector('#create-something');
 
   creationButton.addEventListener('click', createProduct);
 
-  for (let button of removalButtons) {
+  for (let button of removalButton) {
     button.addEventListener('click', removeProduct);
   }
 
